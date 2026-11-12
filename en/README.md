@@ -10,7 +10,7 @@ Every component in the layout already exists as a product or an open-source proj
 
 > **Status** Design draft. This repository contains no runnable implementation. Parts of each layer have been built and run separately. The layout as a whole has not been implemented or verified end to end.
 
-**[Interactive floor plan (in Korean)](https://dominic-dk.github.io/harnel/)** · [Seven layers](#seven-layers) · [Use cases](usecases.md) · [Relation to existing products](#relation-to-existing-products) · [한국어](../README.md)
+**[Interactive floor plan (in Korean)](https://dominic-dk.github.io/harnel/)** · [Seven layers](#seven-layers) · [Use cases](usecases.md) · [Cases](#cases) · [Relation to existing products](#relation-to-existing-products) · [한국어](../README.md)
 
 ## Overview
 
@@ -114,6 +114,14 @@ sequenceDiagram
     H->>H: Re-verify original hash, then apply
 ```
 
+## Cases
+
+Analyses that other people made of their own systems in the format of this floor plan, excerpted in part with the authors' permission.
+
+| Case | Content |
+| --- | --- |
+| [1. Four record layers and four checks](cases/01-record-layers-and-checks.md) | A personal agent system that separates the delegation contract, operations manual, work report, and execution log, and places four checks between them. The page also lists what Harnel lacks. |
+
 ## Relation to existing products
 
 This comparison is based on public documentation and repositories as of November 2026. It is not a hands-on evaluation, and the scope of each product keeps changing.
@@ -171,4 +179,4 @@ node tools/build-assets.mjs
 
 ## License
 
-The documents, diagrams, and scripts in this repository are licensed under [CC BY 4.0](../LICENSE). You may copy, modify, and redistribute them with attribution.
+The documents, diagrams, and scripts in this repository are licensed under [CC BY 4.0](../LICENSE). You may copy, modify, and redistribute them with attribution. The figures in `assets/cases/` are excerpted with their author's permission and are not covered by this license.
